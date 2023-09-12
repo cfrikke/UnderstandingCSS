@@ -8,7 +8,7 @@ let buttonclicked = false;
     }
 
     function askPerms() {
-     navigator.permissions.query({ name: "notifications"}).then((result) => {
+     navigator.permissions.query({ name: "geolocation"}).then((result) => {
           if(result.state === "granted"){
                alert("Permissions accepted!");
           } else if(result.state === "denied") {
